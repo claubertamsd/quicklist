@@ -1,0 +1,46 @@
+header{
+  display: flex;
+  
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.form-content{
+  
+  a{  
+    margin-left: -10px;
+    margin-bottom: 1rem;
+    & img{
+      height: 30px;
+      width: 30px;
+    }
+
+  }
+  & form { 
+    margin-top: 2.75rem;
+
+    & div{
+      display: flex;
+      gap: 1rem;
+
+      transition: 500ms ease;
+    }
+  }
+}
+
+@media (width <= 80em){
+  .form-content{
+    form{
+      div{
+        flex-wrap: wrap;
+        input[type="text"]{
+          width: 100%;
+        }
+        button{
+          width: 100%;
+        }
+      }
+      
+    }
+  }
+}
