@@ -24,3 +24,37 @@ ul{
     }
   }
 }
+
+.trash {
+  display: none;
+  align-items: center;
+  border-radius: .75rem;
+  width: 100%;
+  background-color: var(--color-danger);
+  transform: translateX(100%); 
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+  & button {
+    margin-right: 12px;
+  }
+
+  & div {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+
+    & p {
+      color: #ffffff;
+    }
+  }
+}
+
+.show {
+  display: flex;
+  transform: translateX(0); 
+  opacity: 1;
+}

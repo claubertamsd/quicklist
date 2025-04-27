@@ -6,35 +6,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QuickList</title>
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <header class="container"><img src="assets/logo.svg" alt="Logo quicklist"></header>
+    <header class="container">
+      <img src="assets/logo.svg" alt="Logo quicklist" />
+    </header>
 
     <section class="form-content container">
-      <a href="#"><img src="assets/arrow-back.svg" alt="voltar">
-      Voltar
+      <a href="#"
+        ><img src="assets/arrow-back.svg" alt="voltar" />
+        Voltar
       </a>
       <h1>Compras da Semana</h1>
       <form>
         <div>
-          <input type="text" id="temName" placeholder="Adicione um novo item" required>
-          <button id="btn" class="btn-pink"> Adicionar item</button>
+          <input
+            type="text"
+            id="temName"
+            placeholder="Adicione um novo item"
+            required
+          />
+          <button id="btn" class="btn-pink">Adicionar item</button>
         </div>
       </form>
-      <ul title="list">
-        <li id="item" class="item">
-          <div>
-            <input type="checkbox">
-            <span>Feijão </span>
-          </div>
-          <button><img src="assets/icon-delete.svg" alt="Delete"></button>
-        </li>
-      </ul>
+      <ul title="list"></ul>
+
+      <div id="trash" class="trash">
+        <div>
+          <img src="assets/error.svg" alt="Exclamação ERROR" />
+          <p>O item foi removido da lista</p>
+        </div>
+      
+        <button id="btnClose">
+          <img src="assets/close.svg" alt="Fechar mensagem de item excluído">  
+        </button>
+      </div>
     </section>
 
     <script src="script.js"></script>
